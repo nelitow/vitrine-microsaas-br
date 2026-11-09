@@ -1,0 +1,53 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { productKey, nameFromKey, detectStage, detectRevenue, detectCategories, excerpt, buildProjects } from './lib/extract.mjs';
+
+test('productKey ignores social/reddit links and keeps path on shared hosts', () => {
+  assert.equal(productKey('https://www.reddit.com/r/x'), null);
+  assert.equal(productKey('https://youtu.be/abc'), null);
+  assert.equal(productKey('https://www.meuapp.com.br/precos'), 'meuapp.com.br');
+  assert.equal(productKey('https://github.com/Foo/Bar/tree/main'), 'github.com/foo/bar');
+  assert.equal(productKey('https://play.google.com/store/apps/details?id=br.com.app'), 'play.google.com/br.com.app');
+});
+
+test('nameFromKey skips generic labels', () => {
+  assert.equal(nameFromKey('meu-app.vercel.app'), 'Meu App');
+  assert.equal(nameFromKey('agendaplus.com.br'), 'Agendaplus');
+  assert.equal(nameFromKey('github.com/foo/saas-kit'), 'Saas Kit');
+});
+
+test('stage, revenue and category detection', () => {
+  assert.equal(detectStage('chegamos a R$ 2k de MRR'), 'Com receita');
+  assert.equal(detectStage('Lancei meu app'), 'Lançado');
+  assert.equal(detectStage('ainda é um MVP'), 'MVP / Beta');
+  assert.equal(detectRevenue('MRR de R$ 2.300 agora'), 'R$ 2.300');
+  assert.equal(detectRevenue('faturando R$ 800/mês'), 'R$ 800');
+  assert.equal(detectRevenue('sem receita'), null);
+  assert.deepEqual(detectCategories('eu ia fazer um app'), []);
+  assert.ok(detectCategories('Ferramenta de IA para clínicas').includes('IA'));
+});
+
+test('excerpt strips links and markdown and truncates', () => {
+  assert.equal(excerpt('**Oi** veja https://x.com aqui'), 'Oi veja aqui');
+  assert.ok(excerpt('palavra '.repeat(100)).endsWith('…'));
+});
+
+test('posts sharing a product link merge into one project with updates', () => {
+  const base = { author: 'a', score: 1, num_comments: 0, flair: null, is_self: true, permalink: '/p', removed: false };
+  const { projects, skipped } = buildProjects({
+    a: { ...base, id: 'a', title: 'Lancei X', selftext: 'https://x.example', created_utc: 1 },
+    b: { ...base, id: 'b', title: 'X tem MRR de R$ 1k', selftext: 'https://www.x.example/blog', created_utc: 2, score: 4 },
+    c: { ...base, id: 'c', title: 'Pergunta', selftext: 'sem link', created_utc: 3 },
+  });
+  assert.equal(skipped, 1);
+  assert.equal(projects.length, 1);
+  assert.equal(projects[0].updates.length, 2);
+  assert.equal(projects[0].score, 5);
+  assert.equal(projects[0].stage, 'Com receita');
+  assert.equal(projects[0].pitch, 'Lancei X');
+});
+
+test('excerpt drops the dangling lead-in left by a removed link', () => {
+  assert.equal(excerpt('Está no ar: https://x.example'), 'Está no ar');
+  assert.equal(excerpt('Lista de espera em https://x.example'), 'Lista de espera');
+});

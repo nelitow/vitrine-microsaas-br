@@ -1,0 +1,13 @@
+{
+  "name": "vitrine-microsaas-br",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node --env-file=.env scripts/fetch.mjs",
+    "build": "node scripts/build.mjs",
+    "sample": "node scripts/make-sample.mjs && node scripts/build.mjs",
+    "update": "npm run fetch && npm run build",
+    "deploy": "npx wrangler pages deploy dist --project-name vitrine-microsaas-br",
+    "test": "node --test scripts/"
+  }
+}
