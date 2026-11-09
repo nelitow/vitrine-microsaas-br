@@ -98,9 +98,10 @@ export function siteHeader(current = '') {
     <a class="logo" href="/" aria-label="${SITE_NAME}, página inicial"><svg class="logo-mark" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect width="22" height="22" rx="4.5"/><path d="M6 7.2 10.2 15.8 16.4 5.2"/></svg><span class="logo-name">Vitrine</span><span class="logo-sub">MicroSaaS BR</span></a>
     <nav class="site-nav" aria-label="Principal">
       ${link('/', 'Projetos')}
+      ${link('/numeros/', 'Números')}
       ${link('/sobrevivencia/', 'Quem sobreviveu')}
       ${link('/sobre/', 'Sobre')}
-      <a href="https://www.reddit.com/r/MicroSaaSBR/" rel="noopener">r/MicroSaaSBR</a>
+      <a class="nav-sub" href="https://www.reddit.com/r/MicroSaaSBR/" rel="noopener">r/MicroSaaSBR</a>
     </nav>
   </div>
 </header>`;

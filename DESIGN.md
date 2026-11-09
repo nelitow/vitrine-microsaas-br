@@ -140,7 +140,7 @@ A near-monochrome ink-on-paper palette with one working green and two warning hu
 - **Hairline** (hairline): Row dividers, header and footer rules, definition-list rules.
 - **Hairline Strong** (hairline-strong): Control strokes (search field, vote box), separators, the "unknown" bar segment.
 
-### Dark scheme (present, pending approval)
+### Dark scheme (approved 2026-11-09)
 A `prefers-color-scheme: dark` override of every neutral, the accent and both status hues ships in the stylesheet (values in `.impeccable/design.json`). The user has not approved it yet, so it is not a settled commitment. The light values above are normative.
 
 ### Named Rules

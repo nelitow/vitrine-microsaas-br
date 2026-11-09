@@ -18,7 +18,7 @@
           "#ffffff",
           "#ffffff"
         ],
-        "darkPending": "#151514"
+        "dark": "#151514"
       },
       "paper-recess": {
         "role": "neutral",
@@ -34,7 +34,7 @@
           "#fcfcfb",
           "#fefefe"
         ],
-        "darkPending": "#1d1d1b"
+        "dark": "#1d1d1b"
       },
       "ink": {
         "role": "neutral",
@@ -50,7 +50,7 @@
           "#acacac",
           "#e8e8e8"
         ],
-        "darkPending": "#ecebe7"
+        "dark": "#ecebe7"
       },
       "ink-soft": {
         "role": "neutral",
@@ -66,7 +66,7 @@
           "#bfbfbf",
           "#ededed"
         ],
-        "darkPending": "#bdbbb5"
+        "dark": "#bdbbb5"
       },
       "ink-faint": {
         "role": "neutral",
@@ -82,7 +82,7 @@
           "#cbcbca",
           "#f1f1f0"
         ],
-        "darkPending": "#9b9993"
+        "dark": "#9b9993"
       },
       "hairline": {
         "role": "neutral",
@@ -98,7 +98,7 @@
           "#f5f5f4",
           "#fcfcfc"
         ],
-        "darkPending": "#2d2c2a"
+        "dark": "#2d2c2a"
       },
       "hairline-strong": {
         "role": "neutral",
@@ -114,7 +114,7 @@
           "#eeeeec",
           "#fafafa"
         ],
-        "darkPending": "#45443f"
+        "dark": "#45443f"
       },
       "ledger-green": {
         "role": "primary",
@@ -130,7 +130,7 @@
           "#a7d0bc",
           "#e7f2ec"
         ],
-        "darkPending": "#4cc285"
+        "dark": "#4cc285"
       },
       "stale-amber": {
         "role": "tertiary",
@@ -146,7 +146,7 @@
           "#d5c4a4",
           "#f3efe6"
         ],
-        "darkPending": "#e0b04a"
+        "dark": "#e0b04a"
       },
       "down-red": {
         "role": "tertiary",
@@ -162,7 +162,7 @@
           "#e4b0ac",
           "#f8e9e8"
         ],
-        "darkPending": "#f07a6c"
+        "dark": "#f07a6c"
       }
     },
     "darkScheme": {

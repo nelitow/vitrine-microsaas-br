@@ -205,6 +205,83 @@ const survival = layout({
 ${siteFooter(raw.fetchedAt)}`,
 });
 
+// Dashboard: static HTML bar charts, one series each (accent), values labeled.
+const hbar = (rows, { fmt = num, href } = {}) => {
+  const max = Math.max(1, ...rows.map((r) => r[1]));
+  return `<div class="hbar">${rows.map(([label, v, link]) => `<div class="hbar-row" title="${esc(label)}: ${fmt(v)}">
+    <span class="hbar-label">${link ? `<a href="${link}">${esc(label)}</a>` : esc(label)}</span>
+    <span class="hbar-track"><i style="width:${(v / max) * 100}%"></i><b>${fmt(v)}</b></span>
+  </div>`).join('')}</div>`;
+};
+const num = (n) => Number(n).toLocaleString('pt-BR');
+const monthKey = (ts) => { const d = new Date(ts * 1000); return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`; };
+const launchesByMonth = (() => {
+  const counts = tally(projects.map((p) => monthKey(p.firstSeen)));
+  const m = new Map(counts);
+  const keys = [...m.keys()].sort();
+  const out = [];
+  let [y, mo] = keys[0].split('-').map(Number);
+  const [ly, lm] = keys[keys.length - 1].split('-').map(Number);
+  while (y < ly || (y === ly && mo <= lm)) {
+    const k = `${y}-${String(mo).padStart(2, '0')}`;
+    out.push([k, m.get(k) ?? 0]);
+    if (++mo > 12) { mo = 1; y++; }
+  }
+  return out;
+})();
+const colMax = Math.max(1, ...launchesByMonth.map((r) => r[1]));
+const columns = `<div class="cols" style="--n:${launchesByMonth.length}">${launchesByMonth.map(([k, v]) => `<div class="col" title="${fmtMonth(k)}: ${plural(v, 'lançamento', 'lançamentos')}">
+    <span class="col-plot"><b>${v || ''}</b><i style="height:${(v / colMax) * 100}%"></i></span>
+    <span class="col-label">${fmtMonth(k).split(' ')[0]}</span>
+  </div>`).join('')}</div>`;
+const latestMs = projects.map((p) => [p.name, healthDb[p.key]?.checks?.at(-1), `/p/${slug(p.key)}/`])
+  .filter(([, c]) => c?.ok && c.ms).map(([n, c, l]) => [n, c.ms, l]).sort((a, b) => a[1] - b[1]);
+const totalVotes = projects.reduce((s, p) => s + p.score, 0);
+const totalComments = projects.reduce((s, p) => s + p.comments, 0);
+const withRevenue = projects.filter((p) => p.stage === 'Com receita').length;
+const years = [...new Set(launchesByMonth.map(([k]) => k.slice(0, 4)))];
+
+const dashboard = layout({
+  title: `Números do r/MicroSaaSBR | ${SITE_NAME}`,
+  description: `${projects.length} produtos, ${num(totalVotes)} votos e ${num(totalComments)} comentários: lançamentos por mês, estágios, categorias e mais votados do r/MicroSaaSBR.`,
+  canonical: `${SITE_URL}/numeros/`,
+  css,
+  body: `${siteHeader('/numeros/')}
+<main class="wrap page dash">
+  <h1>Números</h1>
+  <p class="lede">${projects.length} produtos em ${totalPosts} posts, somando ${num(totalVotes)} votos e ${num(totalComments)} comentários no Reddit. ${plural(withRevenue, 'declara', 'declaram')} receita.</p>
+  <div class="dash-grid">
+    <section class="panel panel-wide">
+      <h2>Lançamentos por mês</h2>
+      <p class="panel-note">Mês do primeiro post de cada projeto, ${years.join('–')}.</p>
+      ${columns}
+    </section>
+    <section class="panel">
+      <h2>Por estágio</h2>
+      <p class="panel-note">Lido do texto dos posts; pode errar.</p>
+      ${hbar(stageCounts)}
+    </section>
+    <section class="panel">
+      <h2>Por categoria</h2>
+      <p class="panel-note">Um projeto pode estar em mais de uma.</p>
+      ${hbar(catCounts)}
+    </section>
+    <section class="panel">
+      <h2>Mais votados</h2>
+      <p class="panel-note">Soma dos votos de todos os posts do projeto.</p>
+      ${hbar(projects.filter((p) => p.score).sort((a, b) => b.score - a.score).slice(0, 10).map((p) => [p.name, p.score, `/p/${slug(p.key)}/`]))}
+    </section>
+    <section class="panel">
+      <h2>Quem carrega mais rápido</h2>
+      <p class="panel-note">Tempo de resposta da página inicial na última verificação, em milissegundos. Menor é melhor.</p>
+      ${hbar(latestMs, { fmt: (v) => `${num(v)} ms` })}
+    </section>
+  </div>
+  <p class="muted">Quem está vivo e quem morreu fica em <a href="/sobrevivencia/">Quem sobreviveu</a>.</p>
+</main>
+${siteFooter(raw.fetchedAt)}`,
+});
+
 const xmlEsc = (s) => String(s).replace(/[<>&'"]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' })[c]);
 const rssItems = projects
   .flatMap((p) => p.updates.map((u, i) => ({ p, u, isLaunch: i === 0 })))
@@ -234,6 +311,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>${SITE_URL}/</loc><lastmod>${iso(raw.fetchedAt / 1000)}</lastmod></url>
   <url><loc>${SITE_URL}/sobre/</loc></url>
   <url><loc>${SITE_URL}/sobrevivencia/</loc></url>
+  <url><loc>${SITE_URL}/numeros/</loc></url>
 ${projects.map((p) => `  <url><loc>${SITE_URL}/p/${slug(p.key)}/</loc><lastmod>${iso(p.lastUpdate)}</lastmod></url>`).join('\n')}
 </urlset>
 `;
@@ -242,6 +320,7 @@ const files = {
   'index.html': index,
   'sobre/index.html': about,
   'sobrevivencia/index.html': survival,
+  'numeros/index.html': dashboard,
   'feed.xml': rss,
   'sitemap.xml': sitemap,
   'robots.txt': `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`,
