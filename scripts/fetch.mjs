@@ -5,7 +5,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
 const SUBREDDIT = 'MicroSaaSBR';
 const CACHE = new URL('../data/posts.json', import.meta.url);
-const { REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USERNAME } = process.env;
+const { REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USERNAME, REDDIT_PASSWORD } = process.env;
 
 if (!REDDIT_CLIENT_ID || !REDDIT_CLIENT_SECRET || !REDDIT_USERNAME) {
   console.error('Missing REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET / REDDIT_USERNAME in .env (see .env.example)');
@@ -23,7 +23,11 @@ async function getToken() {
       'User-Agent': UA,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: 'grant_type=client_credentials',
+    // Script apps tied to an automated account log in as that account;
+    // without a password we fall back to app-only auth.
+    body: REDDIT_PASSWORD
+      ? new URLSearchParams({ grant_type: 'password', username: REDDIT_USERNAME, password: REDDIT_PASSWORD }).toString()
+      : 'grant_type=client_credentials',
   });
   if (!res.ok) throw new Error(`token request failed: ${res.status} ${await res.text()}`);
   return (await res.json()).access_token;

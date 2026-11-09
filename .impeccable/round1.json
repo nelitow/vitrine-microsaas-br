@@ -1,0 +1,117 @@
+{
+  "title": "Escolha o mundo visual da vitrine",
+  "question": "O sorteio caiu no Folheto de Cordel. Fica com ele, pega uma alternativa ou sorteia de novo.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Folheto de Cordel",
+      "kicker": "THE ROLL",
+      "lineage": "Folhetos de cordel pendurados no barbante da feira, capas em papel colorido barato, título em caixa-alta preta e xilogravura",
+      "thesis": "Cada micro-SaaS é um folheto pendurado no barbante; o sub é a feira.",
+      "palette": ["#f2b8c6", "#f4d35e", "#9ed0a6", "#a9c6e8", "#151311"],
+      "materials": ["papel jornal colorido", "tinta preta chapada", "barbante e prendedor", "carimbo de borracha"],
+      "viewport": "Um varal horizontal de folhetos coloridos (cor do papel = categoria), cada capa com nome em grotesca condensada preta, o pitch como subtítulo de cordel e o estágio carimbado; a busca é a placa da barraca.",
+      "risk": "Pode virar fantasia folclórica se a tipografia for mole ou se a gente simular xilogravura em CSS.",
+      "raised": [
+        {"from": "Ticket wallet", "raise": "Nada some, tudo é carimbado: projeto morto ganha carimbo MORTO sobre a capa e continua pendurado."},
+        {"from": "Botanical folio", "raise": "Toda capa tem a mesma anatomia e a mesma linha de base, então estágios se comparam de relance."},
+        {"from": "Timetable slide rack", "raise": "Um tamanho de texto para todo o miúdo; hierarquia só por peso, caixa e reversão, nunca por tamanho a mais."},
+        {"from": "Emission line rail", "raise": "Status carregado por forma (carimbo cheio, vazado, riscado), não só por cor."}
+      ],
+      "hero": "https://impeccable.style/worlds/cards/operate-c-emission-line-rail-hero.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Classificados de jornal",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Caderno de Classificados do jornal de domingo: colunas densas, anúncios em caixinha, fios e negrito",
+      "thesis": "A vitrine como o caderno de classificados do sub: cada projeto é um anúncio em caixa.",
+      "palette": ["#efece4", "#141414", "#d7261e", "#ffd400"],
+      "materials": ["papel jornal", "fio tipográfico", "caixa de anúncio", "tinta de rotativa"],
+      "viewport": "Cabeçalho de caderno com data e número da edição, cinco colunas densas de anúncios de tamanhos diferentes (tamanho = engajamento), filtros como seções do caderno.",
+      "risk": "É a direção mais familiar: fica perto do look editorial com fios finos que muita IA entrega."
+    },
+    {
+      "id": "challenger-botanical",
+      "label": "Botanical folio",
+      "verdict": "declined",
+      "lineage": "Pranchas botânicas sequenciais, mesma escala e mesmo chão",
+      "thesis": "Ciclo de vida do projeto como pranchas de semente a casca seca.",
+      "palette": ["#f1ead8", "#3f6b3a", "#b8261b", "#1b1b18"],
+      "materials": ["prancha gravada", "fio sépia"],
+      "viewport": "Cinco pranchas alinhadas: Ideia, MVP, Lançado, Receita, Morto.",
+      "risk": "Fundo creme + serifa itálica é exatamente o visual de IA que o sub zoa.",
+      "case": "Mapeia bem estágios, mas a comunidade não se reconhece em herbário.",
+      "kept": "Anatomia fixa e linha de base comum em todos os cards.",
+      "hero": "https://impeccable.style/worlds/cards/editorial-sequence-montage-botanical-folio-season-hero.webp"
+    },
+    {
+      "id": "challenger-ticket",
+      "label": "Ticket wallet",
+      "verdict": "declined",
+      "lineage": "Carteira de bilhetes aéreos com cópia carbono",
+      "thesis": "Cada projeto é um cupom; morte é carimbo VOID.",
+      "palette": ["#1d2a5c", "#d22630", "#ffffff", "#5b3f8c"],
+      "materials": ["cupom carbono", "carimbo VOID"],
+      "viewport": "Pilha de cupons destacáveis, um por projeto.",
+      "risk": "Estrangeiro para dev brasileiro; vira tema de fantasia.",
+      "case": "O estado carimbado é ótimo; o resto não fala com o público.",
+      "kept": "Nada some, tudo é carimbado.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-jet-age-ticket-wallet-hero.webp"
+    },
+    {
+      "id": "challenger-timetable",
+      "label": "Timetable slide rack",
+      "verdict": "declined",
+      "lineage": "Horário de bolso de companhia aérea sobre mesa de luz",
+      "thesis": "Um único tamanho de tipo; hierarquia só por peso e caixa.",
+      "palette": ["#e2a72e", "#2f3a40", "#e8e0c8", "#c8361d"],
+      "materials": ["vidro tingido", "papel goldenrod"],
+      "viewport": "Trilho inclinado de slides com cada projeto.",
+      "risk": "Inclinação de 11 graus atrapalha leitura densa.",
+      "case": "Disciplina tipográfica forte, mundo errado.",
+      "kept": "Um tamanho só para o miúdo; rank por peso e caixa.",
+      "hero": "https://impeccable.style/worlds/cards/rw-timetable-slide-rack-hero.webp"
+    },
+    {
+      "id": "challenger-monochrome",
+      "label": "Monochrome product marketing",
+      "verdict": "declined",
+      "lineage": "Site de SaaS neutro com um acento",
+      "thesis": "Escala neutra, um acento, cada afirmação com prova.",
+      "palette": ["#fafafa", "#0a0a0a", "#5b5bd6"],
+      "materials": ["grid limpo", "screenshot em gradiente"],
+      "viewport": "Grid de cards neutros com screenshots.",
+      "risk": "É literalmente o visual de SaaS gerado por IA.",
+      "case": "Claro, mas é o que o usuário pediu para fugir.",
+      "kept": "Toda etiqueta aponta para a fonte (post, checagem).",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-monochrome-product-marketing-hero.webp"
+    },
+    {
+      "id": "challenger-transit",
+      "label": "Midnight transit diagram",
+      "verdict": "declined",
+      "lineage": "Mapa de metrô em esmalte azul",
+      "thesis": "Categorias como linhas, projetos como estações.",
+      "palette": ["#14213d", "#e63946", "#2a6fdb", "#f4a300", "#2a9d5c"],
+      "materials": ["esmalte", "porcelana"],
+      "viewport": "Diagrama de linhas com estações-projeto.",
+      "risk": "Relações inventadas entre projetos; quebra a verdade do produto.",
+      "case": "Bonito, mas sugere conexões que não existem.",
+      "kept": "Vocabulário de estado operacional (em operação, atrasado, suspenso).",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-midnight-transit-diagram-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "O padrão da categoria",
+    "thesis": "Diretório estilo Product Hunt / YC, executado com capricho.",
+    "palette": ["#ffffff", "#111827", "#ff6154"],
+    "materials": ["grid limpo", "logo quadrado", "botão de upvote"],
+    "viewport": "Lista ranqueada com logo, nome, pitch e contador de votos à direita.",
+    "risk": "Indistinguível de qualquer diretório, por definição."
+  },
+  "steer": true
+}

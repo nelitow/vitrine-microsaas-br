@@ -5,9 +5,10 @@
   "scripts": {
     "fetch": "node --env-file=.env scripts/fetch.mjs",
     "build": "node scripts/build.mjs",
-    "sample": "node scripts/make-sample.mjs && node scripts/build.mjs",
+    "sample": "node scripts/make-sample.mjs && SAMPLE=1 node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
     "update": "npm run fetch && npm run build",
     "deploy": "npx wrangler pages deploy dist --project-name vitrine-microsaas-br",
-    "test": "node --test scripts/"
+    "test": "node --test scripts/*.test.mjs"
   }
 }

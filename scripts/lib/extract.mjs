@@ -18,17 +18,19 @@ const SHARED_HOSTS = {
 export const CATEGORIES = {
   // "ia" is also a common Portuguese verb, so the acronym only counts in caps
   'IA': { test: (t) => /\b(IA|AI)\b/.test(t) || /\b(gpt|chatgpt|llm|openai|claude|gemini|intelig[eê]ncia artificial)/i.test(t) },
-  'Finanças': /\b(finan[cç]|pix|nota fiscal|nf-?e|contab|fatura|cobran[cç]a|boleto|investiment|or[cç]amento)/i,
-  'Marketing': /\b(marketing|seo|leads?|an[uú]ncio|ads|tr[aá]fego|copy|redes sociais|newsletter)/i,
+  'Finanças': /\b(finan[cç]|pix|nota fiscal|notas fiscais|nfs?-?e|contab|fatura|cobran[cç]a|boleto|investiment|or[cç]amento)/i,
+  'Marketing': /\b(marketing|seo|leads?|an[uú]ncio|ads\b|tr[aá]fego|copy|redes sociais|newsletter)/i,
   'Vendas e CRM': /\b(crm|vendas|vendedor|whatsapp|atendimento|chatbot|funil)/i,
-  'Produtividade': /\b(produtividade|tarefas?|agenda|agendamento|organiz|notas|calend[aá]rio|gest[aã]o de projetos)/i,
-  'Dev tools': /\b(api|devs?|desenvolvedor|github|deploy|c[oó]digo|programa[cç][aã]o|no-?code|low-?code|saas boilerplate)/i,
+  'Produtividade': /\b(produtividade|tarefas?|agenda|agendamento|organiz|calend[aá]rio|gest[aã]o de projetos)/i,
+  'Dev tools': /\b(api|devs?|desenvolvedor|deploy|hospedagem|vps|servidor(es)?|c[oó]digo|programa[cç][aã]o|no-?code|low-?code|saas boilerplate)/i,
   'Saúde': /\b(sa[uú]de|cl[ií]nica|psic[oó]log|nutri|m[eé]dic|academia|fitness|treino|terapeut)/i,
   'Educação': /\b(educa[cç]|curso|estud|alunos?|professor|concurso|enem|escola|aula)/i,
   'E-commerce': /\b(e-?commerce|loja|shopify|nuvemshop|marketplace|mercado livre|dropshipping)/i,
   'Jurídico': /\b(advogad|jur[ií]dic|contrato|lgpd|processo judicial)/i,
-  'RH': /\b(rh|recrutamento|vagas?|curr[ií]culo|contrata[cç][aã]o|ponto eletr[oô]nico)/i,
-  'Imobiliário': /\b(imobili[aá]ri|im[oó]ve|aluguel|condom[ií]nio|corretor)/i,
+  'RH': /\b(rh|recrutamento|vagas? de emprego|curr[ií]culo|contrata[cç][aã]o|ponto eletr[oô]nico)/i,
+  'Jogos': /\b(jogo|game|clicker|gamifica)/i,
+  'Esportes': /\b(futebol|rebaixamento|campeonato|brasileir[aã]o|esportes?|apostas?)/i,
+  'Imobiliário': /\b(imobili[aá]ri|im[oó]ve|aluguel|alugar|onde morar|condom[ií]nio|corretor)/i,
 };
 
 export const STAGES = ['Ideia', 'MVP / Beta', 'Lançado', 'Com receita'];
@@ -36,9 +38,9 @@ export const STAGES = ['Ideia', 'MVP / Beta', 'Lançado', 'Com receita'];
 const MONEY = /R\$\s?\d[\d.,]*\s?(?:k|mil)?/i;
 
 export function detectStage(text) {
-  if (/\bmrr\b|faturamento|faturando|clientes? pagantes?|primeir[ao]s? (vendas?|clientes? pagantes?)|assinantes? pagantes?/i.test(text)) return 'Com receita';
+  if (/\bmrr\b|faturamento|faturando|clientes? pagantes?|primeir[ao]s? (vendas?|clientes? pagantes?)|assinantes? pagantes?|receita (entrando|recorrente)|j[aá] (tem|temos) receita/i.test(text)) return 'Com receita';
   if (/\b(lancei|lan[cç]amos|lan[cç]ado|lan[cç]ou|acabei de lan[cç]ar|est[aá] no ar|j[aá] est[aá] online|saiu do forno)\b/i.test(text)) return 'Lançado';
-  if (/\b(mvp|beta|prot[oó]tipo|validando|valida[cç][aã]o|early access|lista de espera|waitlist)\b/i.test(text)) return 'MVP / Beta';
+  if (/\b(mvp|beta|prot[oó]tipo|validando|valida[cç][aã]o|early access|lista de espera|waitlist|em desenvolvimento|rodando (apenas|s[oó]) (na|em) minha m[aá]quina)\b/i.test(text)) return 'MVP / Beta';
   if (/\b(ideia|pensando em criar|vale a pena criar|validar a ideia)\b/i.test(text)) return 'Ideia';
   return 'Lançado';
 }
@@ -80,12 +82,18 @@ export function findProductLink(post) {
   const candidates = [];
   if (!post.is_self && post.url) candidates.push(post.url);
   candidates.push(...(post.selftext.match(URL_RE) ?? []));
-  for (const c of candidates) {
-    const clean = c.replace(/[.,;:!?*]+$/, '');
-    const key = productKey(clean);
-    if (key) return { url: clean, key };
-  }
-  return null;
+  const links = candidates
+    .map((c) => c.replace(/[.,;:!?*]+$/, ''))
+    .map((url) => ({ url, key: productKey(url) }))
+    .filter((l) => l.key);
+  // A product's own site beats its GitHub/app-store page when both are linked.
+  return links.find((l) => !l.key.includes('/')) ?? links[0] ?? null;
+}
+
+// "owner/repo" of the first GitHub repository linked, used for health checks.
+export function findRepo(text) {
+  const m = text.match(/github\.com\/([\w.-]+)\/([\w.-]+)/i);
+  return m ? `${m[1]}/${m[2].replace(/\.git$/, '')}`.toLowerCase() : null;
 }
 
 export function nameFromKey(key) {
@@ -110,6 +118,8 @@ export function excerpt(md, max = 220) {
     .replace(/[#>*_`~|]+/g, ' ')
     .replace(/&amp;/g, '&').replace(/&#x200B;/g, '')
     .replace(/\s+/g, ' ')
+    .replace(/\s*,\s*:\s*/g, ': ')
+    .replace(/\s+([,:;])(?=\s)/g, '$1')
     .trim()
     .replace(/(\s+em)?\s*:?$/i, '');
   if (text.length <= max) return text;
@@ -141,12 +151,13 @@ export function buildProjects(posts) {
       revenue: detectRevenue(text),
       categories: detectCategories(text),
       excerpt: excerpt(p.selftext),
+      repo: findRepo(`${p.url ?? ''}\n${p.selftext}`),
     };
     const proj = byKey.get(link.key);
     if (proj) {
       proj.posts.push(entry);
     } else {
-      byKey.set(link.key, { key: link.key, url: link.url, name: nameFromKey(link.key), posts: [entry] });
+      byKey.set(link.key, { key: link.key, url: link.url, name: p.name || nameFromKey(link.key), posts: [entry] });
     }
   }
 
@@ -171,6 +182,7 @@ export function buildProjects(posts) {
       firstSeen: first.created,
       lastUpdate: latest.created,
       latestPermalink: latest.permalink,
+      repo: [...proj.posts].reverse().find((e) => e.repo)?.repo ?? null,
       updates: proj.posts.map(({ id, title, permalink, created, score, comments }) => ({ id, title, permalink, created, score, comments })),
     };
   });

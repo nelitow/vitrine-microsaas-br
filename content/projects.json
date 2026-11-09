@@ -1,0 +1,22 @@
+{
+  "_doc": "Hand-written overrides per project key: tagline (one-liner shown in the list) and categories (replace the auto-detected ones).",
+  "apps.apple.com/br/app/boora": { "tagline": "Mapa de rolês: crie um evento no mapa e veja quem topa ir", "categories": ["Social"] },
+  "usesecuro.com": { "tagline": "Finanças pessoais open source, self-hosted, com Open Finance", "categories": ["Finanças", "Open source"] },
+  "vaicair.app": { "tagline": "Chances de rebaixamento e título no Brasileirão, rodada a rodada", "categories": ["Esportes"] },
+  "github.com/kursku/emissor-nfse": { "tagline": "Emissor de NFS-e Nacional que roda na sua máquina, sem API paga", "categories": ["Finanças", "Open source"] },
+  "ezplan.com.br": { "tagline": "Planta 3D da casa com projeto elétrico na NBR 5410", "categories": ["Imobiliário"] },
+  "hospedeaqui.cloud": { "tagline": "VPS e hospedagem gerenciada em servidores de São Paulo", "categories": ["Dev tools"] },
+  "anycaptions.app": { "tagline": "Legenda ao vivo de qualquer áudio do PC, traduzida e offline", "categories": ["IA", "Open source"] },
+  "gambiarraapi.vercel.app": { "tagline": "Lista de APIs de IA com plano grátis ou créditos", "categories": ["IA", "Dev tools"] },
+  "meukanto.com": { "tagline": "Lista de compras e gastos para montar a primeira casa", "categories": ["Produtividade"] },
+  "yourplace3d.github.io": { "tagline": "Digite um endereço, receba a maquete 3D do bairro", "categories": ["Open source"] },
+  "mapasossego.com.br": { "tagline": "Nota de 0 a 100 para o silêncio de qualquer endereço", "categories": ["Imobiliário"] },
+  "click-brasil.com.br": { "tagline": "Clicker das eleições com placar por estado", "categories": ["Jogos"] },
+  "myurls.app": { "tagline": "Gerenciador de links com perfil público e encurtador", "categories": ["Produtividade"] },
+  "mandatusbr.vercel.app": { "tagline": "O que cada deputado federal posta e faz na Câmara", "categories": ["IA"] },
+  "lucrali.com.br": { "tagline": "Caixa, estoque, fiado e Pix para loja pequena", "categories": ["Vendas e CRM", "E-commerce"] },
+  "play.google.com/br.com.seve.tabelacar": { "tagline": "Tabela FIPE com histórico de preço e a garagem da casa", "categories": ["Automotivo"] },
+  "dealflowbrasil.com.br": { "tagline": "Notícias de fusões, aquisições e rodadas no Brasil", "categories": ["Finanças"] },
+  "curriculoautomatico.com.br": { "tagline": "Currículo e candidatura automática em 100 mil vagas", "categories": ["RH", "IA"] },
+  "easypdf.com.br": { "tagline": "Ferramentas de PDF e assinatura digital ICP-Brasil", "categories": ["Produtividade", "Jurídico"] }
+}

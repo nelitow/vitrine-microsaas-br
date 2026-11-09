@@ -1,0 +1,484 @@
+{
+ "ezplan.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 172
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 135
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 124
+   }
+  ]
+ },
+ "vaicair.app": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 330
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 126
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 132
+   }
+  ]
+ },
+ "gambiarraapi.vercel.app": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 449
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 257
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 254
+   }
+  ]
+ },
+ "hospedeaqui.cloud": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 817
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 953
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1060
+   }
+  ]
+ },
+ "mapasossego.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1156
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 684
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 678
+   }
+  ]
+ },
+ "click-brasil.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1181
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 237
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 236
+   }
+  ]
+ },
+ "meukanto.com": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1285
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 99
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 110
+   }
+  ]
+ },
+ "dealflowbrasil.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1549
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 390
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 178
+   }
+  ]
+ },
+ "play.google.com/br.com.seve.tabelacar": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1598
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 308
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 316
+   }
+  ]
+ },
+ "github.com/kursku/emissor-nfse": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 666
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 568
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 129
+   }
+  ],
+  "repo": {
+   "name": "kursku/emissor-nfse",
+   "gone": false,
+   "archived": false,
+   "stars": 30,
+   "pushedAt": 1793053483,
+   "at": 1794231937
+  }
+ },
+ "yourplace3d.github.io": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 609
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 90
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 87
+   }
+  ],
+  "lastModified": 1794229089,
+  "repo": {
+   "name": "yourplace3d/3d-city",
+   "gone": false,
+   "archived": false,
+   "stars": 41,
+   "pushedAt": 1794229920,
+   "at": 1794231937
+  }
+ },
+ "lucrali.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1713
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 464
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 651
+   }
+  ]
+ },
+ "anycaptions.app": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1244
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 951
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1016
+   }
+  ],
+  "repo": {
+   "name": "eduardoviniciusj/anycaptions",
+   "gone": false,
+   "archived": false,
+   "stars": 15,
+   "pushedAt": 1793912135,
+   "at": 1794231937
+  }
+ },
+ "curriculoautomatico.com.br": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1827
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 462
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 494
+   }
+  ]
+ },
+ "mandatusbr.vercel.app": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1868
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 112
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 267
+   }
+  ],
+  "lastModified": 1794231835
+ },
+ "myurls.app": {
+  "checks": [
+   {
+    "at": 1794231833,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 3593
+   },
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1394
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1509
+   }
+  ]
+ },
+ "easypdf.com.br": {
+  "checks": [
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 190
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 135
+   }
+  ],
+  "lastModified": 1793229733
+ },
+ "apps.apple.com/br/app/boora": {
+  "checks": [
+   {
+    "at": 1794231912,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1489
+   },
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 205
+   }
+  ]
+ },
+ "usesecuro.com": {
+  "checks": [
+   {
+    "at": 1794231937,
+    "ok": true,
+    "kind": "ok",
+    "status": 200,
+    "ms": 1202
+   }
+  ],
+  "repo": {
+   "name": "securo-finance/securo",
+   "gone": false,
+   "archived": false,
+   "stars": 4248,
+   "pushedAt": 1794144219,
+   "at": 1794231937
+  }
+ }
+}

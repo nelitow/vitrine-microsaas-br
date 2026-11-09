@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T14:24:34.061Z",
+  "title": "Design System: Vitrine MicroSaaS BR",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#333333",
+          "#6d6d6d",
+          "#a8a8a8",
+          "#e2e2e2",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff"
+        ],
+        "darkPending": "#151514"
+      },
+      "paper-recess": {
+        "role": "neutral",
+        "displayName": "Paper Recess",
+        "canonical": "#f6f6f4",
+        "tonalRamp": [
+          "#313131",
+          "#696969",
+          "#a2a2a0",
+          "#dadad8",
+          "#f7f7f5",
+          "#f9f9f8",
+          "#fcfcfb",
+          "#fefefe"
+        ],
+        "darkPending": "#1d1d1b"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#161616",
+        "tonalRamp": [
+          "#040404",
+          "#090909",
+          "#0e0e0e",
+          "#131313",
+          "#343434",
+          "#707070",
+          "#acacac",
+          "#e8e8e8"
+        ],
+        "darkPending": "#ecebe7"
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#4d4d4b",
+        "tonalRamp": [
+          "#0f0f0f",
+          "#212120",
+          "#333331",
+          "#444442",
+          "#646462",
+          "#929290",
+          "#bfbfbf",
+          "#ededed"
+        ],
+        "darkPending": "#bdbbb5"
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Ink Faint",
+        "canonical": "#6e6e6b",
+        "tonalRamp": [
+          "#161615",
+          "#2f2f2e",
+          "#484846",
+          "#61615f",
+          "#81817e",
+          "#a6a6a4",
+          "#cbcbca",
+          "#f1f1f0"
+        ],
+        "darkPending": "#9b9993"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e4e4e0",
+        "tonalRamp": [
+          "#2e2e2d",
+          "#626260",
+          "#969693",
+          "#cacac6",
+          "#e7e7e4",
+          "#eeeeec",
+          "#f5f5f4",
+          "#fcfcfc"
+        ],
+        "darkPending": "#2d2c2a"
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#cfcfca",
+        "tonalRamp": [
+          "#292928",
+          "#595957",
+          "#888885",
+          "#b7b7b3",
+          "#d5d5d1",
+          "#e2e2de",
+          "#eeeeec",
+          "#fafafa"
+        ],
+        "darkPending": "#45443f"
+      },
+      "ledger-green": {
+        "role": "primary",
+        "displayName": "Ledger Green",
+        "canonical": "#0a7a42",
+        "tonalRamp": [
+          "#02180d",
+          "#04341c",
+          "#07502b",
+          "#096c3a",
+          "#298b5a",
+          "#69ad8b",
+          "#a7d0bc",
+          "#e7f2ec"
+        ],
+        "darkPending": "#4cc285"
+      },
+      "stale-amber": {
+        "role": "tertiary",
+        "displayName": "Stale Amber",
+        "canonical": "#8a5a00",
+        "tonalRamp": [
+          "#1c1200",
+          "#3b2700",
+          "#5b3b00",
+          "#7a5000",
+          "#996f21",
+          "#b79a62",
+          "#d5c4a4",
+          "#f3efe6"
+        ],
+        "darkPending": "#e0b04a"
+      },
+      "down-red": {
+        "role": "tertiary",
+        "displayName": "Down Red",
+        "canonical": "#b42318",
+        "tonalRamp": [
+          "#240705",
+          "#4d0f0a",
+          "#761710",
+          "#9f1f15",
+          "#be3f36",
+          "#d17871",
+          "#e4b0ac",
+          "#f8e9e8"
+        ],
+        "darkPending": "#f07a6c"
+      }
+    },
+    "darkScheme": {
+      "status": "present in src/style.css, pending user approval; not a settled commitment",
+      "mechanism": "prefers-color-scheme: dark override of :root custom properties",
+      "note": "Values live in colorMeta.*.darkPending. The survival-bar stale fill (#d9a21b literal) and the badge SVG do not adapt."
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page title (h1) on project, about and survival pages. Fixed 32px at all widths; no display tier exists."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names in rows and h2 section heads."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Project pitch under the h1 and the survival page lede."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text, filters, nav, tables; prose capped near 68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meta lines, counts, legends, breadcrumbs, footer, table heads; tabular numerals for counts."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Badge embed snippet only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sort-underline",
+        "value": "inset 0 -2px var(--accent)",
+        "purpose": "Active sort tab underline. An underline device, not elevation; the system is flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-colour",
+        "value": ".12s (border-color, color)",
+        "purpose": "Vote box hover."
+      },
+      {
+        "name": "disclosure",
+        "value": ".15s rotate",
+        "purpose": "Mobile filter disclosure chevron."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none",
+        "purpose": "All transitions removed under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "filters-collapse",
+        "value": "859px"
+      },
+      {
+        "name": "narrow",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Project Row",
+      "kind": "custom",
+      "refersTo": "project-row-name",
+      "description": "The unit of the index: name, domain, pitch and meta on hairlines, vote box at the right edge.",
+      "html": "<article class=\"ds-row\"><div><h2 class=\"ds-row-name\"><a href=\"#\">Hospede Aqui</a> <a class=\"ds-row-domain\" href=\"#\">hospedeaqui.cloud<svg class=\"ds-ico\" viewBox=\"0 0 12 12\" width=\"12\" height=\"12\" aria-hidden=\"true\"><path d=\"M4.5 2.5h5v5M9.5 2.5 3 9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></h2><p class=\"ds-row-pitch\">VPS e hospedagem gerenciada em servidores de São Paulo</p><p class=\"ds-row-meta\"><span class=\"ds-stage\">Com receita</span><span class=\"ds-revenue\">R$ 16 mil</span><span>Dev tools</span><span>9 de nov de 2026</span><span>51 comentários</span></p></div><a class=\"ds-vote\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 12 12\" width=\"12\" height=\"12\" aria-hidden=\"true\"><path d=\"M6 2.5 10.5 9h-9z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg><b>43</b></a></article>",
+      "css": ".ds-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px; padding: 11px 0 10px; border-bottom: 1px solid var(--line); font: 15px/1.5 var(--sans); color: var(--ink); } .ds-row p, .ds-row h2 { margin: 0; } .ds-row-name { font-size: 17px; font-weight: 650; line-height: 1.3; letter-spacing: -.005em; } .ds-row-name > a:first-child { color: inherit; text-decoration: none; } .ds-row-name > a:first-child:hover { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; } .ds-row-domain { margin-left: 6px; font-size: 13px; font-weight: 400; color: var(--ink-3); text-decoration: none; } .ds-ico { width: 12px; height: 12px; margin-left: 3px; vertical-align: -.02em; } .ds-row-pitch { margin-top: 1px; max-width: 68ch; } .ds-row-meta { display: flex; flex-wrap: wrap; column-gap: 12px; margin-top: 3px; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; } .ds-stage, .ds-revenue { color: var(--ink); font-weight: 600; } .ds-parado { color: var(--amber); font-weight: 600; } .ds-vote { display: flex; flex-direction: column; align-items: center; gap: 1px; align-self: start; width: 48px; padding: 6px 0 5px; border: 1px solid var(--line-2); border-radius: 6px; color: var(--ink); text-decoration: none; font-size: 13px; font-variant-numeric: tabular-nums; transition: border-color .12s, color .12s; } .ds-vote .ds-ico { margin: 0; color: var(--accent); } .ds-vote:hover { border-color: var(--accent); color: var(--accent); } .ds-row a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }"
+    },
+    {
+      "name": "Dead Project Row",
+      "kind": "custom",
+      "refersTo": "project-row-name",
+      "description": "A dead project stays listed: name struck through, name and pitch greyed, status in ink bold.",
+      "html": "<article class=\"ds-row-dead\"><h2><a href=\"#\">Nome do projeto</a></h2><p class=\"ds-pitch\">Pitch do projeto (placeholder; no dead rows ship yet)</p><p class=\"ds-meta\"><span class=\"ds-stage\">Lançado</span><span class=\"ds-morto\">morto</span></p></article>",
+      "css": ".ds-row-dead { padding: 11px 0 10px; border-bottom: 1px solid var(--line); font: 15px/1.5 var(--sans); } .ds-row-dead h2, .ds-row-dead p { margin: 0; } .ds-row-dead h2 { font-size: 17px; font-weight: 650; line-height: 1.3; } .ds-row-dead h2 a { color: var(--ink-3); text-decoration: line-through; text-decoration-thickness: 1.5px; } .ds-row-dead h2 a:hover { color: var(--accent); } .ds-row-dead h2 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; } .ds-pitch { color: var(--ink-3); } .ds-meta { display: flex; flex-wrap: wrap; column-gap: 12px; margin-top: 3px; font-size: 13px; color: var(--ink-3); } .ds-stage { color: var(--ink); font-weight: 600; } .ds-morto { color: var(--ink); font-weight: 700; }"
+    },
+    {
+      "name": "Filter Facet",
+      "kind": "chip",
+      "refersTo": "filter-option",
+      "description": "Checkbox list with tabular counts; the checked label turns green.",
+      "html": "<fieldset class=\"ds-facet\"><legend>Estágio</legend><label><input type=\"checkbox\" checked> <span>MVP / Beta</span> <span class=\"ds-n\">8</span></label><label><input type=\"checkbox\"> <span>Lançado</span> <span class=\"ds-n\">5</span></label><label><input type=\"checkbox\"> <span>Com receita</span> <span class=\"ds-n\">3</span></label></fieldset>",
+      "css": ".ds-facet { width: 200px; border: 0; margin: 0; padding: 0; font: 15px/1.5 var(--sans); } .ds-facet legend { padding: 0; margin-bottom: 6px; font-size: 13px; font-weight: 650; color: var(--ink); } .ds-facet label { display: flex; align-items: baseline; gap: 8px; padding: 3px 0; color: var(--ink-2); cursor: pointer; } .ds-facet label:hover { color: var(--ink); } .ds-facet input { accent-color: var(--accent); margin: 0; } .ds-facet input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-facet input:checked + span { color: var(--accent); font-weight: 600; } .ds-n { margin-left: auto; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Toolbar: Search and Sort Tabs",
+      "kind": "nav",
+      "refersTo": "sort-tab",
+      "description": "Search field plus text sort tabs, closed by an ink rule.",
+      "html": "<div class=\"ds-toolbar\"><input class=\"ds-search\" type=\"search\" placeholder=\"Buscar por nome, assunto ou maker\"><div class=\"ds-sorts\"><button class=\"ds-sort\" aria-pressed=\"true\">Em alta</button><button class=\"ds-sort\" aria-pressed=\"false\">Recentes</button><button class=\"ds-sort\" aria-pressed=\"false\">Mais votados</button></div></div>",
+      "css": ".ds-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; padding-bottom: 14px; border-bottom: 1px solid var(--ink); font: 15px/1.5 var(--sans); } .ds-search { flex: 1 1 260px; height: 36px; padding: 0 12px; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line-2); border-radius: 6px; } .ds-search::placeholder { color: var(--ink-3); } .ds-search:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; } .ds-sorts { display: flex; gap: 18px; } .ds-sort { background: none; border: 0; padding: 4px 0; font: inherit; color: var(--ink-3); cursor: pointer; } .ds-sort:hover { color: var(--ink); } .ds-sort:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; } .ds-sort[aria-pressed=\"true\"] { color: var(--ink); font-weight: 600; box-shadow: inset 0 -2px var(--accent); }"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Thin band: wordmark left, nav right, current page underlined in ink.",
+      "html": "<header class=\"ds-head\"><a class=\"ds-logo\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" aria-hidden=\"true\"><rect width=\"18\" height=\"18\" rx=\"3\" fill=\"var(--accent)\"/><path d=\"M9 4.5 13.5 12h-9z\" fill=\"var(--bg)\"/></svg>Vitrine MicroSaaS BR</a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Projetos</a><a href=\"#\">Quem sobreviveu</a><a href=\"#\">Sobre</a><a href=\"#\">r/MicroSaaSBR</a></nav></header>",
+      "css": ".ds-head { display: flex; align-items: center; gap: 12px 28px; min-height: 52px; border-bottom: 1px solid var(--line); font: 15px/1.5 var(--sans); } .ds-logo { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; letter-spacing: -.01em; color: var(--ink); text-decoration: none; } .ds-nav { display: flex; gap: 22px; margin-left: auto; } .ds-nav a { color: var(--ink-2); text-decoration: none; } .ds-nav a:hover, .ds-nav a[aria-current] { color: var(--ink); } .ds-nav a[aria-current] { text-decoration: underline; text-underline-offset: 6px; } .ds-head a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled control: ink fill, green on hover.",
+      "html": "<a class=\"ds-button\" href=\"#\">Abrir hospedeaqui.cloud<svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M4.5 2.5h5v5M9.5 2.5 3 9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button { display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px; border-radius: 6px; background: var(--ink); color: var(--bg); font: 600 15px/1.5 var(--sans); text-decoration: none; } .ds-button:hover { background: var(--accent); color: var(--bg); } .ds-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Survival Bar",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Segmented status strip with a counted legend. The stale segment carries the build literal #d9a21b, which is drift (not a token, no dark value), not a primitive to reuse.",
+      "html": "<div><div class=\"ds-bar\" role=\"img\" aria-label=\"No ar: 12, Parado: 3, Fora do ar: 1, Morto: 2, Não verificado: 1\"><i style=\"width:63%;background:var(--accent)\"></i><i style=\"width:16%;background:#d9a21b\"></i><i style=\"width:5%;background:var(--red)\"></i><i style=\"width:11%;background:var(--ink)\"></i><i style=\"width:5%;background:var(--line-2)\"></i></div><div class=\"ds-legend\"><span><i style=\"background:var(--accent)\"></i>No ar <b>12</b></span><span><i style=\"background:var(--ink)\"></i>Morto <b>2</b></span></div></div>",
+      "css": ".ds-bar { display: flex; gap: 2px; height: 8px; min-width: 120px; overflow: hidden; border-radius: 2px; background: var(--line); } .ds-bar i { display: block; height: 100%; } .ds-legend { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 10px; font: 13px/1.5 var(--sans); color: var(--ink-2); } .ds-legend i { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 1px; } .ds-legend b { color: var(--ink); margin-left: 2px; font-variant-numeric: tabular-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ledger",
+    "overview": "The site is a record, not a showcase. It works in the category standard set by Hacker News and the YC company directory: white paper, near-black ink, one green, hairline rules, and rows of text you can scan in seconds. The community's projects are the content. The frame stays out of the way, and its only voice is the dry Portuguese copy.\n\nDensity is high and calm. Projects are rows divided by hairlines, not cards. Filters are plain checkbox lists with tabular counts. Sorting uses text tabs. Status is written out in words and coloured only when it means trouble. Dead projects stay in the list with a struck-through name and greyed text, because the site is honest about death. Depth comes only from rules and type weight.\n\nThe world was chosen against the AI-showcase look: cream paper, serif display type, pill chips, rounded shadowed cards, emoji and hero metrics.",
+    "keyCharacteristics": [
+      "White ground, near-black ink, one green accent.",
+      "System sans at four sizes (13 / 15 / 17 / 32px), with tabular numerals on every count.",
+      "Rows and hairlines instead of containers; flat, with no drop shadows.",
+      "Status in words; death shown by strikethrough and grey, not by a badge.",
+      "UI icons are inline SVG drawn with a single stroke."
+    ],
+    "rules": [
+      {
+        "name": "The One Green Rule",
+        "body": "Green means \"this is a link, this is selected, or you are touching it\". The wordmark and the alive bar segment are its only resting fills. Everything else is ink. Don't introduce a second accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Words-First Status Rule",
+        "body": "Health is written as a word (\"parado\", \"fora do ar\", \"morto\", \"sobrevivente\"). Colour backs up the word and never replaces it. Only the stale and down states get a hue; dead and survivor stay ink, in bold.",
+        "section": "colors"
+      },
+      {
+        "name": "The Four Sizes Rule",
+        "body": "Only 13, 15, 17 and 32px exist. A new need maps to one of them.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Every number that counts something (votes, filter counts, revenue, dates in timelines, cohort figures) uses tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Separate things with a 1px rule, not a box. Use the strong ink rule only to close a control band (the toolbar, a table head).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every size on 13 / 15 / 17 / 32px and every count in tabular numerals.",
+      "Do separate content with 1px hairlines and leave rows uncontained.",
+      "Do write status as a word; colour only the stale (amber) and down (red) states.",
+      "Do strike through and grey a dead project's name instead of hiding it.",
+      "Do draw UI icons as inline SVG with one stroke (1.3–1.4 on a 12px box) in `currentColor`.",
+      "Do put counts inline in sentences (\"20 produtos lançados…\").",
+      "Do keep navigation chrome and names in ink, and leave green for content links, selection and interaction."
+    ],
+    "donts": [
+      "Don't wrap projects or sections in cards, and don't use drop or offset shadows anywhere.",
+      "Don't use pill-shaped chips or tags; controls top out at a 6px radius.",
+      "Don't introduce a serif or display face, or a cream or tinted page ground.",
+      "Don't build stat tiles or big-number hero blocks; numbers live in sentences, tables and meta lines.",
+      "Don't add a second accent hue.",
+      "Don't use emoji or font glyphs as icons."
+    ]
+  }
+}
