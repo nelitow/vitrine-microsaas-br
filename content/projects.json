@@ -18,5 +18,13 @@
   "play.google.com/br.com.seve.tabelacar": { "tagline": "Tabela FIPE com histórico de preço e a garagem da casa", "categories": ["Automotivo"] },
   "dealflowbrasil.com.br": { "tagline": "Notícias de fusões, aquisições e rodadas no Brasil", "categories": ["Finanças"] },
   "curriculoautomatico.com.br": { "tagline": "Currículo e candidatura automática em 100 mil vagas", "categories": ["RH", "IA"] },
-  "easypdf.com.br": { "tagline": "Ferramentas de PDF e assinatura digital ICP-Brasil", "categories": ["Produtividade", "Jurídico"] }
+  "easypdf.com.br": { "tagline": "Ferramentas de PDF e assinatura digital ICP-Brasil", "categories": ["Produtividade", "Jurídico"] },
+  "getnotchnook.com": { "tagline": "O notch do MacBook vira uma Dynamic Island com atalhos", "categories": ["Produtividade"] },
+  "blumio.com.br": { "tagline": "Mídia kit de influenciadora que se atualiza sozinho", "categories": ["Marketing"] },
+  "betterzap.app": { "tagline": "Mini CRM e resposta automática dentro do WhatsApp Web", "categories": ["Vendas e CRM", "IA"] },
+  "futoverlay.com": { "tagline": "Placar ao vivo de futebol como overlay no OBS", "categories": ["Esportes"] },
+  "paramaker.com.br": { "tagline": "Modelos 3D paramétricos: ajuste as medidas e baixe o STL" },
+  "diverge.social.br": { "tagline": "Rede social para neurodivergentes, sem algoritmo nem karma", "categories": ["Social"] },
+  "dailymarknews.com": { "tagline": "Jornal diário montado por IA com os assuntos que você escolhe", "categories": ["IA"] },
+  "lasanhagarage.com.br": { "tagline": "Jogo de quiz de carros para Android", "categories": ["Jogos", "Automotivo"] }
 }
