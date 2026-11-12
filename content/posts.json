@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794490844065,
+ "fetchedAt": 1794506135373,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -649,6 +649,21 @@
    "selftext": "Lancei o ZeChat, uma rede social focada no Brasil com jogos no estilo fazendinha, chat, feed e stories. Começou como hobby e, com menos de 30 dias de lançamento, já passou de mil perfis criados.\n\nhttps://zechat.com.br",
    "removed": false,
    "name": "ZeChat"
+  },
+  "m-voce-faria-renda-extra-com-isso-": {
+   "id": "m-voce-faria-renda-extra-com-isso-",
+   "title": "Você faria renda extra com isso?",
+   "author": "mathmach",
+   "created_utc": 1794495600,
+   "score": 0,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://gpu-grid.code4source.com",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Voc%C3%AA%20faria%20renda%20extra%20com%20isso%3F",
+   "selftext": "Ideia de uma rede comunitária de IA em que as pessoas alugam o processamento da GPU do próprio PC em troca de renda extra. Por enquanto é só uma landing page explicando o modelo, para validar a ideia antes de construir.\n\nhttps://gpu-grid.code4source.com",
+   "removed": false,
+   "name": "GPU Grid"
   }
  }
 }

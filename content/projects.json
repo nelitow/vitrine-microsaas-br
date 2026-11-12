@@ -29,5 +29,6 @@
   "lasanhagarage.com.br": { "tagline": "Jogo de quiz de carros para Android", "categories": ["Jogos", "Automotivo"] },
   "rustedf.com": { "tagline": "API que transforma HTML e CSS em PDF pronto para imprimir", "categories": ["Dev tools"] },
   "muitobarato.app": { "tagline": "Ofertas da comunidade com selo de preço real pelo histórico", "categories": ["E-commerce", "IA"] },
-  "zechat.com.br": { "tagline": "Rede social brasileira com joguinhos de fazendinha, chat e stories", "categories": ["Social", "Jogos"] }
+  "zechat.com.br": { "tagline": "Rede social brasileira com joguinhos de fazendinha, chat e stories", "categories": ["Social", "Jogos"] },
+  "gpu-grid.code4source.com": { "tagline": "Alugue a GPU do seu PC para uma rede comunitária de IA", "categories": ["IA"] }
 }
