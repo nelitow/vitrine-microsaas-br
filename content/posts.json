@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794488300579,
+ "fetchedAt": 1794490844065,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -634,6 +634,21 @@
    "selftext": "O Muito Barato é um app de ofertas mantido pela comunidade: as pessoas postam promoções, o servidor confere o preço na loja e cada oferta ganha um selo (\"barato de verdade\", \"preço normal\" ou \"inflado\") com base no histórico de preço. Tem alerta de queda de preço, cupons e um mapa de custo-benefício que compara modelos por especificação e preço. Feito em uma semana com Expo, Next e Cloudflare, já aprovado na App Store e no Google Play, de olho na Black Friday.\n\nhttps://muitobarato.app",
    "removed": false,
    "name": "Muito Barato"
+  },
+  "m-e-se-": {
+   "id": "m-e-se-",
+   "title": "E se ?",
+   "author": "davidbalbino",
+   "created_utc": 1794495600,
+   "score": 0,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://zechat.com.br",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=E%20se%20%3F",
+   "selftext": "Lancei o ZeChat, uma rede social focada no Brasil com jogos no estilo fazendinha, chat, feed e stories. Começou como hobby e, com menos de 30 dias de lançamento, já passou de mil perfis criados.\n\nhttps://zechat.com.br",
+   "removed": false,
+   "name": "ZeChat"
   }
  }
 }
