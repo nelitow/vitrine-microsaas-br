@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794486891725,
+ "fetchedAt": 1794488300579,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -619,6 +619,21 @@
    "selftext": "API de HTML e CSS para PDF com renderizador próprio, sem Chrome headless, que gasta menos memória e CPU e barateia os volumes altos. Foco em impressão: quebra de página, tabelas que cruzam páginas, cabeçalho e rodapé.\n\nVocê manda o HTML (ou monta o template no editor do app) numa única requisição HTTP e recebe o PDF de volta, para faturas, recibos, certificados e relatórios. Também suporta Google Fonts; JavaScript não é executado, de propósito. Como é uma requisição só, encaixa em n8n, Make e ferramentas parecidas. Já tem usuários e apps internos rodando nele, e o criador pede opinião sobre preço, posicionamento e integrações que faltam.\n\nSite: https://rustedf.com/pt-br/\nDocs: https://rustedf.com/pt-br/docs/",
    "removed": false,
    "name": "RustedPDF"
+  },
+  "m-criei-um-app-de-promoc-o-es-completo-em-": {
+   "id": "m-criei-um-app-de-promoc-o-es-completo-em-",
+   "title": "Criei um app de promoções completo em uma semana, agora é distribuir",
+   "author": "luizalmeida7",
+   "created_utc": 1794409200,
+   "score": 0,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://muitobarato.app",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Criei%20um%20app%20de%20promo%C3%A7%C3%B5es%20completo%20em%20uma%20semana%2C%20agora%20%C3%A9%20distribuir",
+   "selftext": "O Muito Barato é um app de ofertas mantido pela comunidade: as pessoas postam promoções, o servidor confere o preço na loja e cada oferta ganha um selo (\"barato de verdade\", \"preço normal\" ou \"inflado\") com base no histórico de preço. Tem alerta de queda de preço, cupons e um mapa de custo-benefício que compara modelos por especificação e preço. Feito em uma semana com Expo, Next e Cloudflare, já aprovado na App Store e no Google Play, de olho na Black Friday.\n\nhttps://muitobarato.app",
+   "removed": false,
+   "name": "Muito Barato"
   }
  }
 }

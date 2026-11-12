@@ -27,5 +27,6 @@
   "diverge.social.br": { "tagline": "Rede social para neurodivergentes, sem algoritmo nem karma", "categories": ["Social"] },
   "dailymarknews.com": { "tagline": "Jornal diário montado por IA com os assuntos que você escolhe", "categories": ["IA"] },
   "lasanhagarage.com.br": { "tagline": "Jogo de quiz de carros para Android", "categories": ["Jogos", "Automotivo"] },
-  "rustedf.com": { "tagline": "API que transforma HTML e CSS em PDF pronto para imprimir", "categories": ["Dev tools"] }
+  "rustedf.com": { "tagline": "API que transforma HTML e CSS em PDF pronto para imprimir", "categories": ["Dev tools"] },
+  "muitobarato.app": { "tagline": "Ofertas da comunidade com selo de preço real pelo histórico", "categories": ["E-commerce", "IA"] }
 }
