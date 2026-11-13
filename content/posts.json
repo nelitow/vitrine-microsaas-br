@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794506135373,
+ "fetchedAt": 1794589747308,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -664,6 +664,21 @@
    "selftext": "Ideia de uma rede comunitária de IA em que as pessoas alugam o processamento da GPU do próprio PC em troca de renda extra. Por enquanto é só uma landing page explicando o modelo, para validar a ideia antes de construir.\n\nhttps://gpu-grid.code4source.com",
    "removed": false,
    "name": "GPU Grid"
+  },
+  "m-kino-o-gerador-de-video-e-fotos-mais-ava": {
+   "id": "m-kino-o-gerador-de-video-e-fotos-mais-ava",
+   "title": "Kino - o gerador de video e fotos mais avançado já criado",
+   "author": "getkino-io",
+   "created_utc": 1794582000,
+   "score": 1,
+   "num_comments": 1,
+   "flair": null,
+   "url": "https://getkino.io",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Kino%20-%20o%20gerador%20de%20video%20e%20fotos%20mais%20avan%C3%A7ado%20j%C3%A1%20criado",
+   "selftext": "Olá pessoal,\n\nA equipe Kino vem anunciar que lançamos a nova versão da plataforma em getkino.io. Produto totalmente brasileiro.\n\nGeração de audio, video e foto.\n\nCréditos gratuitos ao criar uma conta! Aproveitem.\n\nEquipe Kino\n\nhttps://getkino.io",
+   "removed": false,
+   "name": "Kino"
   }
  }
 }
