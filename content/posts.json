@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794589747308,
+ "fetchedAt": 1794590810102,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -679,6 +679,111 @@
    "selftext": "Olá pessoal,\n\nA equipe Kino vem anunciar que lançamos a nova versão da plataforma em getkino.io. Produto totalmente brasileiro.\n\nGeração de audio, video e foto.\n\nCréditos gratuitos ao criar uma conta! Aproveitem.\n\nEquipe Kino\n\nhttps://getkino.io",
    "removed": false,
    "name": "Kino"
+  },
+  "m-na-o-sei-se-conta-como-saas-mas-no-meio-": {
+   "id": "m-na-o-sei-se-conta-como-saas-mas-no-meio-",
+   "title": "Não sei se conta como SaaS, mas no meio de tanto vibecode, fiz um jogo",
+   "author": "def_not_myself",
+   "created_utc": 1794409200,
+   "score": 4,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://playmineborn.com",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=N%C3%A3o%20sei%20se%20conta%20como%20SaaS%2C%20mas%20no%20meio%20de%20tanto%20vibecode%2C%20fiz%20um%20jogo",
+   "selftext": "É isso, cai no desejo de fazer um SaaS, até fiz, consegui cliente, mas o que eu sempre gostei mesmo foi de games. Fiz o https://playmineborn.com - um jogo semi idle, com mecânicas de auto battle, aberturas de baú, etc. Convido quem se interessar a dar uma olhada, lancei a temporada 1, e pretendo dedicar cada vez mais tempo. Acabei de rodar minha primeira campanha de marketing. Estou aberto a feedback!",
+   "removed": false,
+   "name": "Mineborn"
+  },
+  "m-criei-um-site-para-mostrar-como-funciona": {
+   "id": "m-criei-um-site-para-mostrar-como-funciona",
+   "title": "Criei um site para mostrar como funciona a SURVIVE — Prontidão Familiar (Android)",
+   "author": "ocipriano",
+   "created_utc": 1794409200,
+   "score": 2,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://survive.osvaldocipriano.dev",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Criei%20um%20site%20para%20mostrar%20como%20funciona%20a%20SURVIVE%20%E2%80%94%20Prontid%C3%A3o%20Familiar%20(Android)",
+   "selftext": "Há algum tempo partilhei aqui a SURVIVE — Prontidão Familiar, uma aplicação Android gratuita que desenvolvi para ajudar a organizar os recursos essenciais de uma família em situações de emergência. Entretanto, continuei a trabalhar no projeto e decidi criar um website dedicado à aplicação, onde é possível conhecer as funcionalidades e perceber melhor como tudo funciona antes de a instalar. Website: https://survive.osvaldocipriano.dev",
+   "removed": false,
+   "name": "SURVIVE"
+  },
+  "m-finalmente-finalizei-meu-saas-pitra": {
+   "id": "m-finalmente-finalizei-meu-saas-pitra",
+   "title": "Finalmente finalizei meu Saas Pitra",
+   "author": "tialysonpitra",
+   "created_utc": 1794495600,
+   "score": 1,
+   "num_comments": 3,
+   "flair": null,
+   "url": "https://pitra.com.br",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Finalmente%20finalizei%20meu%20Saas%20Pitra",
+   "selftext": "Visite a Pitra https://pitra.com.br seus infoprodutos. Venda Receba via Pix na hora.",
+   "removed": false,
+   "name": "Pitra"
+  },
+  "m-o-meu-saas-tem-bastante-acessos": {
+   "id": "m-o-meu-saas-tem-bastante-acessos",
+   "title": "O meu saas tem bastante acessos",
+   "author": "DeliciousChannel1012",
+   "created_utc": 1794322800,
+   "score": 2,
+   "num_comments": 5,
+   "flair": null,
+   "url": "https://vollante.app",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=O%20meu%20saas%20tem%20bastante%20acessos",
+   "selftext": "O meu saas ja tem bastante acessos diarios, so preciso pensar como monetizar isso agora. O projeto é o vollante.app (reddit deletou meu outro post), ja tem bastante acesso diario mas eu nao ganho nada com isso ainda. Estou implementando um sistema de consultas por placas de carros mas nao é nada que vai dar uma grana legal. Agora a estrategia seria transformar esses acesso em algum tipo de assinatura ou buscar parceiros para anunciar na plataforma.\n\nhttps://vollante.app",
+   "removed": false,
+   "name": "Vollante"
+  },
+  "m-construi-sozinho-um-app-de-transcric-a-o": {
+   "id": "m-construi-sozinho-um-app-de-transcric-a-o",
+   "title": "Construí sozinho um app de transcrição (RN + FastAPI) e preciso de 12 testers Android pra passar no teste fechado do Google Play",
+   "author": "ZummyBach",
+   "created_utc": 1794322800,
+   "score": 1,
+   "num_comments": 3,
+   "flair": null,
+   "url": "https://zuzum.com.br",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Constru%C3%AD%20sozinho%20um%20app%20de%20transcri%C3%A7%C3%A3o%20(RN%20%2B%20FastAPI)%20e%20preciso%20de%2012%20testers%20Android%20pra%20passar%20no%20teste%20fechado%20do%20Google%20Play",
+   "selftext": "Sou de python/react e AWS. Passei os últimos meses construindo sozinho o Zuzum (Zuzum.com.br) um app que grava reuniões, aulas e entrevistas, transcreve e organiza tudo por projeto, com um chat de IA em cima do conteúdo. Para juristas, transcreve em tempo real e consulta na lei vigente. Já está na App Store, mas caí na regra do Google Play para conta pessoal nova: 12 testers inscritos por 14 dias seguidos antes de liberar a produção. Se você tem Android e topa testar por 2 semanas, ganha o plano Pro durante o beta e por mais 3 meses depois.\n\nhttps://zuzum.com.br",
+   "removed": false,
+   "name": "Zuzum"
+  },
+  "m-leila-o-se-imo-veis": {
+   "id": "m-leila-o-se-imo-veis",
+   "title": "Leilão se imóveis",
+   "author": "Adventurous-Dark-734",
+   "created_utc": 1794063600,
+   "score": 0,
+   "num_comments": 3,
+   "flair": null,
+   "url": "https://www.argosleiloes.com.br",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Leil%C3%A3o%20se%20im%C3%B3veis",
+   "selftext": "Vou anunciar uma plataforma que um colega meu está criando. Usei recentemente um beta e gostei muito! A proposta é ser um lugar onde ajuda e acompanha pessoas que querem comprar seu primeiro imóvel por meio de leilão. Eles usam uma comunicação bem simples para evitar atrito com pessoas novas no mundo de leilão. Tem uma ferramenta que ajuda a mapear custos escondidos e entender o valor de mercado da região. A plataforma é gratuita, pago vai ser apenas um assistente IA+Humano o qual acompanha a pessoa até a data do imóvel de interesse.\n\nhttps://www.argosleiloes.com.br",
+   "removed": false,
+   "name": "Argos Leilões"
+  },
+  "m-eu-odeio-criar-novos-agentes-de-ia-enta-": {
+   "id": "m-eu-odeio-criar-novos-agentes-de-ia-enta-",
+   "title": "Eu odeio criar novos agentes de IA. Então, criei uma ferramenta para facilitar esse processo.",
+   "author": "Koninhooz",
+   "created_utc": 1794495600,
+   "score": 0,
+   "num_comments": 2,
+   "flair": null,
+   "url": "https://builder.flowbase.tech/",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Eu%20odeio%20criar%20novos%20agentes%20de%20IA.%20Ent%C3%A3o%2C%20criei%20uma%20ferramenta%20para%20facilitar%20esse%20processo.",
+   "selftext": "É simples e gratuita. Para iniciantes, é complicado. Mesmo para quem já tem experiência, escrever configurações manualmente em JSON/Markdown é chato, repetitivo e sem uma interface visual. Você pode configurar os objetivos, ferramentas, MCPs, plugins e permissões do seu agente e depois exportar tudo em JSON ou Markdown. Pronto para reutilizar no OpenClaw, ChatGPT ou em outras plataformas de agentes de IA.\n\nLink: https://builder.flowbase.tech/",
+   "removed": false,
+   "name": "Flowbase Builder"
   }
  }
 }

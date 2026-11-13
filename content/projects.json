@@ -31,5 +31,12 @@
   "muitobarato.app": { "tagline": "Ofertas da comunidade com selo de preço real pelo histórico", "categories": ["E-commerce", "IA"] },
   "zechat.com.br": { "tagline": "Rede social brasileira com joguinhos de fazendinha, chat e stories", "categories": ["Social", "Jogos"] },
   "gpu-grid.code4source.com": { "tagline": "Alugue a GPU do seu PC para uma rede comunitária de IA", "categories": ["IA"] },
-  "getkino.io": { "tagline": "Plataforma brasileira de geração de áudio, vídeo e foto com IA", "categories": ["IA"] }
+  "getkino.io": { "tagline": "Plataforma brasileira de geração de áudio, vídeo e foto com IA", "categories": ["IA"] },
+  "playmineborn.com": { "tagline": "Jogo semi idle com auto battle, abertura de baús e temporadas", "categories": ["Jogos"] },
+  "survive.osvaldocipriano.dev": { "tagline": "App Android gratuito de prontidão familiar para emergências", "categories": ["Utilidades"] },
+  "pitra.com.br": { "tagline": "Venda infoprodutos e receba via Pix na hora", "categories": ["Pagamentos", "Infoprodutos"] },
+  "vollante.app": { "tagline": "Catálogo de carros com busca, quiz e consultor", "categories": ["Automotivo"] },
+  "zuzum.com.br": { "tagline": "App que grava e transcreve reuniões e aulas, com chat de IA", "categories": ["IA", "Produtividade"] },
+  "argosleiloes.com.br": { "tagline": "Plataforma gratuita que guia quem quer comprar o primeiro imóvel em leilão", "categories": ["Imobiliário", "IA"] },
+  "builder.flowbase.tech": { "tagline": "Monte a configuração de agentes de IA em uma interface visual e exporte em JSON ou Markdown", "categories": ["IA", "Dev tools"] }
 }
