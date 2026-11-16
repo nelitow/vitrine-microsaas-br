@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794590810102,
+ "fetchedAt": 1794837636249,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -784,6 +784,21 @@
    "selftext": "É simples e gratuita. Para iniciantes, é complicado. Mesmo para quem já tem experiência, escrever configurações manualmente em JSON/Markdown é chato, repetitivo e sem uma interface visual. Você pode configurar os objetivos, ferramentas, MCPs, plugins e permissões do seu agente e depois exportar tudo em JSON ou Markdown. Pronto para reutilizar no OpenClaw, ChatGPT ou em outras plataformas de agentes de IA.\n\nLink: https://builder.flowbase.tech/",
    "removed": false,
    "name": "Flowbase Builder"
+  },
+  "m-criei-uma-plataforma-de-entrega-de-fotos-pa": {
+   "id": "m-criei-uma-plataforma-de-entrega-de-fotos-pa",
+   "title": "Criei uma plataforma de entrega de fotos para fotógrafos. Alguém topa testar?",
+   "author": "DistanceEvery3670",
+   "created_utc": 1794836676,
+   "score": 2,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://userevelou.com",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Criei%20uma%20plataforma%20de%20entrega%20de%20fotos%20para%20fot%C3%B3grafos",
+   "selftext": "Pessoal, estou criando o Revelou, uma plataforma brasileira para fotógrafos entregarem suas fotos aos clientes.\n\nO projeto já está no ar e estou procurando fotógrafos que topem experimentar e me dar um feedback sincero.\n\nPor enquanto, o uso é gratuito. A ideia é construir algo realmente útil ouvindo quem trabalha com fotografia.\n\nQuem quiser conhecer: https://userevelou.com\n\nToda crítica é bem-vinda!",
+   "removed": false,
+   "name": "Revelou"
   }
  }
 }
