@@ -39,5 +39,6 @@
   "zuzum.com.br": { "tagline": "App que grava e transcreve reuniões e aulas, com chat de IA", "categories": ["IA", "Produtividade"] },
   "argosleiloes.com.br": { "tagline": "Plataforma gratuita que guia quem quer comprar o primeiro imóvel em leilão", "categories": ["Imobiliário", "IA"] },
   "builder.flowbase.tech": { "tagline": "Monte a configuração de agentes de IA em uma interface visual e exporte em JSON ou Markdown", "categories": ["IA", "Dev tools"] },
-  "userevelou.com": { "tagline": "Plataforma brasileira para fotógrafos entregarem as fotos aos clientes", "categories": ["Fotografia"] }
+  "userevelou.com": { "tagline": "Plataforma brasileira para fotógrafos entregarem as fotos aos clientes", "categories": ["Fotografia"] },
+  "mei.maisreal.app": { "tagline": "Financeiro do MEI sem planilha, com DAS, limite anual e DASN", "categories": ["Finanças"] }
 }

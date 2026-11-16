@@ -1,5 +1,5 @@
 {
- "fetchedAt": 1794837636249,
+ "fetchedAt": 1794866955329,
  "posts": {
   "m-fiz-um-app-que-coloca-legenda-ao-vivo-em": {
    "id": "m-fiz-um-app-que-coloca-legenda-ao-vivo-em",
@@ -799,6 +799,21 @@
    "selftext": "Pessoal, estou criando o Revelou, uma plataforma brasileira para fotógrafos entregarem suas fotos aos clientes.\n\nO projeto já está no ar e estou procurando fotógrafos que topem experimentar e me dar um feedback sincero.\n\nPor enquanto, o uso é gratuito. A ideia é construir algo realmente útil ouvindo quem trabalha com fotografia.\n\nQuem quiser conhecer: https://userevelou.com\n\nToda crítica é bem-vinda!",
    "removed": false,
    "name": "Revelou"
+  },
+  "m-criei-um-microsaas-para-mei-e-quero-um-f": {
+   "id": "m-criei-um-microsaas-para-mei-e-quero-um-f",
+   "title": "Criei um MicroSaaS para MEI e quero um feedback de vocês",
+   "author": "vsantos01",
+   "created_utc": 1794841200,
+   "score": 0,
+   "num_comments": 0,
+   "flair": null,
+   "url": "https://mei.maisreal.app",
+   "is_self": false,
+   "permalink": "/r/MicroSaaSBR/search/?restrict_sr=1&q=Criei%20um%20MicroSaaS%20para%20MEI%20e%20quero%20um%20feedback%20de%20voc%C3%AAs",
+   "selftext": "O +Real MEI é um app web para o MEI organizar o financeiro sem planilha: receitas e despesas com o saldo do mês, lembrete do DAS, acompanhamento do limite anual, orçamentos com Pix por cliente, relatório mensal e resumo pronto para a DASN, além de um assistente que tira dúvidas de MEI. Feito em Flutter Web com Supabase, por assinatura com 7 dias grátis.\n\nhttps://mei.maisreal.app",
+   "removed": false,
+   "name": "+Real MEI"
   }
  }
 }
